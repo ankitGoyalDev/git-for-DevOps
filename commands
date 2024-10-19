@@ -1,0 +1,145 @@
+# Terminal Commands with Explanations
+
+## Basic Navigation and File Management
+
+- `ls`
+  - Lists the files and directories in the current directory.
+
+- `cd /`
+  - Changes the current directory to the root directory.
+
+- `mkdir devops`
+  - Creates a new directory named `devops`.
+
+- `sudo mkdir devops`
+  - Creates a new directory named `devops` with superuser privileges.
+
+- `cd devops`
+  - Changes the current directory to `devops`.
+
+- `touch test.sh`
+  - Creates a new file named `test.sh`.
+
+- `clear`
+  - Clears the terminal screen.
+
+## Package Management
+
+- `sudo apt install nginx`
+  - Installs the `nginx` web server using the package manager with superuser privileges.
+
+## Nginx Management
+
+- `nginx`
+  - Starts the `nginx` web server.
+
+- `sudo nginx`
+  - Starts `nginx` with superuser privileges.
+
+- `start nginx`
+  - (Typically replaced with `systemctl start nginx` to start the service properly).
+
+## File Editing
+
+- `vim <filename>`
+  - Opens the specified file in the Vim text editor for editing.
+
+- `cat index.nginx-debian.html`
+  - Displays the contents of the specified file.
+
+## User Management
+
+- `useradd -m test`
+  - Creates a new user named `test` with a home directory.
+
+- `sudo useradd -m test`
+  - Creates a new user named `test` with superuser privileges.
+
+- `sudo su test`
+  - Switches to the user `test` with superuser privileges.
+
+## Viewing and Managing Files
+
+- `ls bin`
+  - Lists files and directories in the `bin` directory.
+
+- `cd var`
+  - Changes the current directory to `var`.
+
+- `cd www`
+  - Changes the current directory to `www`.
+
+- `cd /var/www/html`
+  - Changes the current directory to `/var/www/html`.
+
+- `ls -l`
+  - Lists files in the current directory in long format, showing detailed information.
+
+- `ls -lr`
+  - Lists files in the current directory in long format, sorted by reverse order.
+
+## Git Commands
+
+- `git init`
+  - Initializes a new Git repository in the current directory.
+
+- `git status`
+  - Shows the status of changes in the repository (tracked/untracked files).
+
+- `git add <file>`
+  - Stages the specified file for the next commit.
+
+- `git commit -m "<message>"`
+  - Commits the staged changes with a message.
+
+- `git branch`
+  - Lists all branches in the repository.
+
+- `git checkout -b <branch>`
+  - Creates a new branch and switches to it.
+
+- `git log`
+  - Displays the commit history.
+
+- `git restore <file>`
+  - Restores the specified file to its state in the last commit.
+
+- `git switch <branch>`
+  - Switches to the specified branch.
+
+## System Commands
+
+- `pwd`
+  - Prints the current working directory.
+
+- `systemctl`
+  - Controls the systemd system and service manager.
+
+- `man <command>`
+  - Displays the manual page for the specified command.
+
+## Miscellaneous
+
+- `su root`
+  - Switches to the root user (requires the root password).
+
+- `sudo vim <filename>`
+  - Opens the specified file in Vim with superuser privileges.
+
+- `sudo touch nibba.txt nibbi.txt`
+  - Creates new files named `nibba.txt` and `nibbi.txt` with superuser privileges.
+
+- `sudo git rm --cached nibbi.txt`
+  - Removes `nibbi.txt` from the staging area but keeps the file in the working directory.
+
+- `cat <file>`
+  - Displays the contents of the specified file.
+
+- `history`
+  - Displays the command history for the current session.
+
+## Notes
+
+- Use `sudo` for commands that require administrative privileges.
+- Be cautious when editing system files or directories to avoid unintended changes.
+- Ensure that you understand the impact of Git commands, especially when committing or removing files.
